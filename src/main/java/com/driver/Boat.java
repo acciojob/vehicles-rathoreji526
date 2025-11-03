@@ -1,12 +1,18 @@
 package com.driver;
 
-public class Boat implements WaterVehicle{
-    @Override
-    public String getVehicleName(){
-        return "Boat";
+public class Boat extends Vehicle{
+    private int maxSpeed ;
+
+    public Boat(String name , int maxSpeed){
+        super(name);
+        this.maxSpeed = maxSpeed;
     }
-    @Override
-    public int getVehicleCapacity(){
-        return 100;
+
+    public int getMaxSpeed(){
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed){
+        this.maxSpeed = maxSpeed;
     }
 }
