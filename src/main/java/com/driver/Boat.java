@@ -1,18 +1,21 @@
 package com.driver;
 
 public class Boat extends Vehicle{
-    private int maxSpeed ;
+    private int vehicleCapacity ;
 
-    public Boat(String name , int maxSpeed){
+    public Boat(String name , int vehicleCapacity){
         super(name);
-        this.maxSpeed = maxSpeed;
+        this.vehicleCapacity = vehicleCapacity;
+    }
+    public String getVehicleName(){
+        return super.getName();
     }
 
-    public int getMaxSpeed(){
-        return maxSpeed;
+    public int getVehicleCapacity() {
+        return vehicleCapacity;
     }
 
-    public void setMaxSpeed(int maxSpeed){
-        this.maxSpeed = maxSpeed;
+    public void setVehicleCapacity(int vehicleCapacity) {
+        this.vehicleCapacity = vehicleCapacity;
     }
 }
