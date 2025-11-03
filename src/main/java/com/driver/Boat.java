@@ -8,7 +8,7 @@ public class Boat extends Vehicle{
         this.vehicleCapacity = vehicleCapacity;
     }
     public String getVehicleName(){
-        return super.getName();
+        return getName();
     }
 
     public int getVehicleCapacity() {
